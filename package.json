@@ -1,0 +1,28 @@
+{
+  "name": "website-opportunity-discovery-engine",
+  "version": "0.1.0",
+  "description": "A B2B website opportunity discovery engine - finds qualified prospects by crawling and analyzing websites",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest --watchAll",
+    "test:ci": "jest --ci --reportSummary",
+    "migrate": "node migrations/index.js",
+    "seed": "node scripts/seed.js"
+  },
+  "keywords": ["b2b", "discovery", "lead-generation", "web-crawler", "opportunity-engine"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "p-limit": "^6.0.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4"
+  }
+}
